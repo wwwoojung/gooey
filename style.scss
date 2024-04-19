@@ -1,0 +1,20 @@
+@import 'Reset';
+
+@import 'Variables';
+@import 'Mixins';
+
+#wrap {
+    @include position_absol;
+    filter: contrast(50);
+
+    .ball {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #73c9db;
+
+        filter: blur(25px);
+        transition: 2s;
+    }
+}
